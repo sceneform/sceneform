@@ -52,4 +52,4 @@ Bug reports, word-list additions and pull requests are welcome. Read [CONTRIBUTI
 
 Sceneform is **source-available**, not open source. It uses the [sceneform Source-Available License](LICENSE): you may use, study and modify it, and redistribute it non-commercially under its terms. Commercial redistribution needs a separate license. Read [LICENSE](LICENSE) for the details.
 
-The bundled fonts, dictionaries and test fixtures keep their own licenses (see `dictionaries/README.md` and `test/fixtures/interop/`).
+The bundled fonts, dictionaries and test fixtures keep their own licenses (see `dictionaries/README.md` and `test/fixtures/interop/`). Interface icons are [Tabler Icons](https://github.com/tabler/tabler-icons) (MIT), bundled at build time through `@tabler/icons-react`.
