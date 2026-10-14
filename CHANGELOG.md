@@ -9,6 +9,15 @@ identifies one particular build.
 
 ## [Unreleased]
 
+## [0.80.1] - 2026-10-14
+
+### Changed
+- Icons now come from [Tabler Icons](https://tabler.io/icons) (MIT), drawn at one stroke width across the app. The Sceneform mark is unchanged.
+- Window controls (minimise, maximise, restore, close) use the same icon set and are slightly larger and crisper.
+
+### Added
+- Settings › More › About credits Tabler Icons.
+
 ## [0.80.0] - 2026-10-13
 
 First public beta of the Sceneform desktop app (Windows, macOS, Linux).
@@ -76,4 +85,5 @@ First public beta of the Sceneform desktop app (Windows, macOS, Linux).
 - Pictures inside a merged copy are not brought over; unreferenced assets are never cleaned up.
 
 [Unreleased]: https://github.com/sceneform/sceneform-pvt/compare/v0.80.0...HEAD
+[0.80.1]: https://github.com/sceneform/sceneform/releases/tag/v0.80.1
 [0.80.0]: https://github.com/sceneform/sceneform-pvt/releases/tag/v0.80.0
