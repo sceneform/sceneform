@@ -7,7 +7,7 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { api, isMockBridge } from "../lib/api";
 import { isMac, modKey } from "../lib/format";
-import { SceneformMark } from "./icons";
+import { IconWindowClose, IconWindowMaximize, IconWindowMinimize, IconWindowRestore, SceneformMark } from "./icons";
 
 /* ---------- titlebar ---------- */
 
@@ -33,24 +33,17 @@ export function Titlebar({ left, center }: { left?: ReactNode; center?: ReactNod
             {!isMac && (
                 <div className="titlebar__controls">
                     <button className="titlebar__btn" onClick={() => api.window.minimize()} aria-label="Minimize">
-                        <svg viewBox="0 0 11 11"><path d="M0 5.5h11" stroke="currentColor" strokeWidth="1.1" /></svg>
+                        <IconWindowMinimize />
                     </button>
                     <button
                         className="titlebar__btn"
                         onClick={() => api.window.toggleMaximize()}
                         aria-label={maximized ? "Restore" : "Maximize"}
                     >
-                        {maximized ? (
-                            <svg viewBox="0 0 11 11">
-                                <rect x="0.5" y="2.5" width="8" height="8" stroke="currentColor" fill="none" strokeWidth="1.1" />
-                                <path d="M2.5 2.5V0.5h8v8h-2" stroke="currentColor" fill="none" strokeWidth="1.1" />
-                            </svg>
-                        ) : (
-                            <svg viewBox="0 0 11 11"><rect x="0.5" y="0.5" width="10" height="10" stroke="currentColor" fill="none" strokeWidth="1.1" /></svg>
-                        )}
+                        {maximized ? <IconWindowRestore /> : <IconWindowMaximize />}
                     </button>
                     <button className="titlebar__btn close" onClick={() => api.window.close()} aria-label="Close">
-                        <svg viewBox="0 0 11 11"><path d="M0 0l11 11M11 0L0 11" stroke="currentColor" strokeWidth="1.1" /></svg>
+                        <IconWindowClose />
                     </button>
                 </div>
             )}

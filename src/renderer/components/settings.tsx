@@ -252,6 +252,8 @@ export function SettingsScreen(props: {
                                     <dd>© 2026 Blasius Nafiri Marvin. All rights reserved.</dd>
                                     <dt>Fonts</dt>
                                     <dd>Courier Prime and Scoutie Sans, SIL Open Font License</dd>
+                                    <dt>Icons</dt>
+                                    <dd>Tabler Icons, MIT License</dd>
                                     <dt>Fountain parser</dt>
                                     <dd>sceneformfountain, GPL-3.0</dd>
                                 </dl>
