@@ -1,0 +1,27 @@
+# Community word list for Sceneform's spellcheck: screenwriting terms, one word per line.
+# Lines starting with # are comments. Send a pull request to add words. Keep the list sorted, please.
+CONT'D
+CONTD
+EST
+EXT
+INT
+MOS
+O.C.
+O.S.
+POV
+V.O.
+beat
+cutaway
+dissolve
+montage
+offscreen
+onscreen
+parenthetical
+POVs
+screenplay
+screenwriter
+slugline
+smash
+storyboard
+superimpose
+voiceover

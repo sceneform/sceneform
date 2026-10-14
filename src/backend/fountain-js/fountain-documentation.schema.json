@@ -1,0 +1,279 @@
+{
+    "$schema": "./fountain-documentation.schema.json",
+    "version": "1.0.0",
+    "notation": {
+        "<a | b>": "Required — pick exactly one of the enclosed, pipe-separated alternatives.",
+        "[optional]": "Optional — the enclosed part may be left out entirely.",
+        "...": "Free text supplied by the writer (a name, a place, dialogue, etc.) — never literal."
+    },
+    "entries": [
+        {
+            "id": "scene-heading",
+            "name": "Scene Heading",
+            "category": "scene",
+            "aliases": ["Slugline"],
+            "description": "Marks the start of a new scene: where the action happens, and whether it's shot indoors or outdoors. A scene heading must be preceded by a blank line unless it's forced.",
+            "howToUse": "<INT. | EXT. | INT/EXT. | I/E.> <place> [- time of day]",
+            "example": [
+                "INT. BATHROOM - NIGHT",
+                "EXT. PARKING LOT - DAY",
+                "INT./EXT. CAR - CONTINUOUS"
+            ],
+            "availability": "fountain",
+            "seeAlso": ["force-scene-heading", "scene-number", "scene-color"]
+        },
+        {
+            "id": "force-scene-heading",
+            "name": "Force Scene Heading",
+            "category": "scene",
+            "description": "Makes any line a scene heading regardless of wording, for non-standard slugs like 'LATER' or 'FLASHBACK' that don't start with INT/EXT.",
+            "howToUse": ".<anything>",
+            "example": ".LATER",
+            "availability": "fountain",
+            "seeAlso": ["scene-heading"]
+        },
+        {
+            "id": "scene-number",
+            "name": "Scene Number",
+            "category": "scene",
+            "description": "Pins an explicit scene number to a heading instead of letting it be numbered automatically in document order. Useful for keeping numbers stable across revisions.",
+            "howToUse": "<scene heading> #<number>#",
+            "example": "INT. BATHROOM - NIGHT #12A#",
+            "availability": "fountain",
+            "seeAlso": ["scene-heading"]
+        },
+        {
+            "id": "scene-color",
+            "name": "Scene Color Tag",
+            "category": "scene",
+            "description": "Tags a scene heading with a color, used by the app to color-code scene cards in an outline or board view.",
+            "howToUse": "<scene heading> [[<color name or hex>]]",
+            "example": "INT. BATHROOM - NIGHT [[red]]",
+            "availability": "sceneform",
+            "sceneformNotes": "Not part of the Fountain spec. Sceneform reuses the note syntax to carry this, and only recognizes a fixed set of named colors plus hex codes — anything else is treated as an ordinary note, not a color tag.",
+            "seeAlso": ["scene-heading", "note"]
+        },
+        {
+            "id": "action",
+            "name": "Action",
+            "category": "action",
+            "description": "Plain descriptive text — what's happening on screen. This is the default for any line that isn't recognized as something more specific.",
+            "howToUse": "...",
+            "example": "The kettle screams. She doesn't move.",
+            "availability": "fountain",
+            "seeAlso": ["force-action"]
+        },
+        {
+            "id": "force-action",
+            "name": "Force Action",
+            "category": "action",
+            "description": "Forces a line to be treated as action even if it would otherwise be read as a character cue or transition — e.g. a short all-caps line that isn't dialogue.",
+            "howToUse": "!<line>",
+            "example": "!THE END",
+            "availability": "fountain",
+            "seeAlso": ["action"]
+        },
+        {
+            "id": "shot",
+            "name": "Shot",
+            "category": "action",
+            "description": "Calls out a specific camera shot within a scene, set apart from ordinary action.",
+            "howToUse": "!!<shot description>",
+            "example": "!!CLOSE ON: the ring, spinning on the counter",
+            "availability": "fountain"
+        },
+        {
+            "id": "character",
+            "name": "Character",
+            "category": "character",
+            "description": "Names who's speaking, right before their dialogue. Detected automatically when an all-caps line sits on its own with dialogue underneath it.",
+            "howToUse": "<NAME> [(extension)]",
+            "example": "MARIA",
+            "availability": "fountain",
+            "seeAlso": [
+                "force-character",
+                "character-extension",
+                "dual-dialogue"
+            ]
+        },
+        {
+            "id": "force-character",
+            "name": "Force Character",
+            "category": "character",
+            "description": "Forces a line to be read as a character cue even if it wouldn't be picked up automatically — e.g. a lowercase or short name.",
+            "howToUse": "@<name>",
+            "example": ["@MARIA", "@McLAREN"],
+            "availability": "fountain",
+            "seeAlso": ["character"]
+        },
+        {
+            "id": "character-extension",
+            "name": "Character Extension",
+            "category": "character",
+            "description": "A parenthetical note appended to a character cue, most commonly to mark a voice-over, an off-screen line, or that the character is continuing after an interruption.",
+            "howToUse": "<NAME> (<V.O. | O.S. | CONT'D | ...>)",
+            "example": ["MARIA (V.O.)", "MARIA (O.S.)", "MARIA (CONT'D)"],
+            "availability": "fountain",
+            "seeAlso": ["character"]
+        },
+        {
+            "id": "dual-dialogue",
+            "name": "Dual Dialogue",
+            "category": "character",
+            "description": "Marks two characters speaking at the same time, side by side. The caret goes on the second character's cue; it pairs with the dialogue block immediately above it.",
+            "howToUse": "<NAME> ^",
+            "example": "MARIA\nWhere were you?\n\nJAMES ^\nWhere were YOU?",
+            "availability": "fountain",
+            "seeAlso": ["character"]
+        },
+        {
+            "id": "dialogue",
+            "name": "Dialogue",
+            "category": "dialogue",
+            "description": "The spoken line(s) following a character cue. Any non-blank line directly under a character cue or parenthetical is read as dialogue.",
+            "howToUse": "<NAME>\n<line>",
+            "example": "MARIA\nI already told you.",
+            "availability": "fountain",
+            "seeAlso": ["character", "parenthetical"]
+        },
+        {
+            "id": "parenthetical",
+            "name": "Parenthetical",
+            "category": "parenthetical",
+            "description": "A short direction wedged between a character cue (or a line of dialogue) and the dialogue that follows, e.g. how a line should be delivered.",
+            "howToUse": "(<direction>)",
+            "example": "MARIA\n(quietly)\nI already told you.",
+            "availability": "fountain",
+            "seeAlso": ["character", "dialogue"]
+        },
+        {
+            "id": "transition",
+            "name": "Transition",
+            "category": "transition",
+            "description": "A right-aligned editorial cut, like CUT TO: or FADE OUT. Detected automatically when a standalone all-caps line ends in 'TO:' or matches a known fade/cut phrase.",
+            "howToUse": "<PHRASE> TO:",
+            "example": "CUT TO:",
+            "availability": "fountain",
+            "seeAlso": ["force-transition"]
+        },
+        {
+            "id": "force-transition",
+            "name": "Force Transition",
+            "category": "transition",
+            "description": "Forces a line to be read as a transition even if it doesn't match the automatic 'ends in TO:' pattern.",
+            "howToUse": ">...",
+            "example": ">Smash cut",
+            "availability": "fountain",
+            "seeAlso": ["transition"]
+        },
+        {
+            "id": "centered-text",
+            "name": "Centered Text",
+            "category": "formatting",
+            "description": "Centers a line on the page — commonly used for a single, standalone line like an epigraph or a card.",
+            "howToUse": ">...<",
+            "example": ">THE END<",
+            "availability": "fountain"
+        },
+        {
+            "id": "lyrics",
+            "name": "Lyrics",
+            "category": "lyrics",
+            "description": "Marks a line as sung rather than spoken, typically italicized in output. Works both as its own block and inside a dialogue exchange.",
+            "howToUse": "~<line>",
+            "example": "~Happy birthday to you",
+            "availability": "fountain"
+        },
+        {
+            "id": "section",
+            "name": "Section",
+            "category": "structure",
+            "description": "An outline heading used to organize the script (e.g. by act or sequence) without affecting the printed page. Deeper nesting uses more '#' characters.",
+            "howToUse": "<#...>+ <title>",
+            "example": ["# Act One", "## Sequence A"],
+            "availability": "fountain"
+        },
+        {
+            "id": "synopsis",
+            "name": "Synopsis",
+            "category": "structure",
+            "description": "A one-line summary attached to the section or scene above it, used for outlining — never printed on the page.",
+            "howToUse": "=<summary>",
+            "example": "= Maria finds the letter",
+            "availability": "fountain"
+        },
+        {
+            "id": "page-break",
+            "name": "Page Break",
+            "category": "formatting",
+            "description": "Forces a new page to start at this point when the script is exported or printed.",
+            "howToUse": "===",
+            "example": "===",
+            "availability": "fountain"
+        },
+        {
+            "id": "title-page",
+            "name": "Title Page Field",
+            "category": "title-page",
+            "description": "A key/value field describing the document, written before anything else in the file (Title, Author, Draft date, etc.). A value can continue onto following indented lines.",
+            "howToUse": "<Key>: <value>",
+            "example": "Title: Bathroom Break\nAuthor: Axelle",
+            "availability": "fountain"
+        },
+        {
+            "id": "note",
+            "name": "Note",
+            "category": "comment",
+            "description": "An inline comment for the writer's own reference — never printed, never affects scene numbering or structure.",
+            "howToUse": "[[<text>]]",
+            "example": "[[ fix this transition later ]]",
+            "availability": "fountain",
+            "seeAlso": ["boneyard"]
+        },
+        {
+            "id": "boneyard",
+            "name": "Boneyard",
+            "category": "comment",
+            "description": "Comments out a block of text entirely, letting a writer keep an old draft of a scene without it printing or being parsed.",
+            "howToUse": "/*<text>*/",
+            "example": "/*\nOld version:\nMARIA\nForget it.\n*/",
+            "availability": "fountain",
+            "seeAlso": ["note"]
+        },
+        {
+            "id": "emphasis",
+            "name": "Emphasis (Bold / Italic / Underline)",
+            "category": "formatting",
+            "description": "Inline text styling inside action or dialogue lines.",
+            "howToUse": "<*text* | **text** | ***text*** | _text_>",
+            "example": [
+                "*italic*",
+                "**bold**",
+                "***bold italic***",
+                "_underline_"
+            ],
+            "availability": "fountain"
+        },
+        {
+            "id": "continuation",
+            "name": "Paragraph Continuation",
+            "category": "formatting",
+            "description": "Keeps two consecutive lines of action or dialogue in the same paragraph instead of splitting them into separate blocks, by leaving exactly two trailing spaces on the otherwise-blank line between them.",
+            "howToUse": "<line>\\n  \\n<line>",
+            "example": "She waits.  \n\nAnd waits.",
+            "availability": "sceneform",
+            "sceneformNotes": "This two-space continuation rule is specific to Sceneform's engine; other Fountain parsers will typically read the blank line as a normal paragraph break."
+        },
+        {
+            "id": "provisional-character",
+            "name": "In-Progress Character Cue",
+            "category": "character",
+            "description": "While actively typing an all-caps line with nothing under it yet, Sceneform tentatively shows it as a character cue if the cursor is right there — so formatting appears immediately instead of only after dialogue is typed underneath.",
+            "howToUse": "<NAME> (cursor on this line, nothing below it yet)",
+            "example": "MARIA",
+            "availability": "sceneform",
+            "sceneformNotes": "This is an editor convenience tied to cursor position (the `caretLine` parse option), not a Fountain syntax rule. Once dialogue is typed below, it's just an ordinary character cue.",
+            "seeAlso": ["character"]
+        }
+    ]
+}

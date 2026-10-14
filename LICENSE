@@ -1,0 +1,492 @@
+sceneform Source-Available License
+
+Version 1.0 — 2026
+
+Copyright (c) 2026, morphedstill / Blasius N. Marvin ("Licensor")
+
+IMPORTANT NOTICE — READ BEFORE USE
+
+This is a custom, source-available software license. It is inspired by
+certain structural elements of the Apache License 2.0 but is NOT the Apache
+License 2.0, is NOT Apache-2.0-compatible, and is NOT an OSI-approved
+open-source license. It imposes restrictions — particularly around commercial
+redistribution of source code — that conventional open-source licenses do not
+impose.
+
+"Source-available" is a descriptive category, not a single standardized
+license. This document is a standalone legal instrument. Because it restricts
+commercial redistribution, software under this license generally will not
+qualify as "open source" under the Open Source Definition maintained by the
+Open Source Initiative, and will not be OSI-approved.
+
+This license was drafted with care but is a custom legal document. If you
+intend to rely on it for a commercial product, enforce it, or need certainty
+about how it applies to your situation, consult a qualified lawyer licensed
+in the relevant jurisdiction before doing so.
+
+1. Definitions
+
+1.1 "Work" means the original software made available by the Licensor under
+this License, including its source code, documentation, and associated files,
+in the form distributed by the Licensor.
+
+1.2 "Source Form" means the preferred human-readable form of the Work for
+making modifications, including source code, configuration files, and
+documentation source.
+
+1.3 "Object Form" means any form resulting from mechanical transformation of
+Source Form, including compiled object code, generated documentation, and
+other non-source forms.
+
+1.4 "Official Compiled Binary" means a build, executable, package, or other
+Object Form release that is published by the Licensor, or explicitly
+designated by the Licensor as official, through the Project's official
+distribution channels (as designated under Section 1.13). A build or package
+is not an Official Compiled Binary merely because it was compiled from the
+Work's Source Form by a third party, regardless of accuracy or fidelity to the
+original.
+
+1.5 "Modify" / "Modification" means to alter, add to, or delete from the
+Source Form of the Work, or to create a work based on the Work.
+
+1.6 "Material Modification" means a Modification that adds, removes, or
+materially alters the functionality, behavior, or purpose of the Work, judged
+by substance rather than form. A Material Modification must reflect a genuine,
+non-trivial change to what the software does or how it operates.
+
+Without limiting the generality of the foregoing, the following, without more,
+generally do not by themselves constitute a Material Modification:
+
+* changes to whitespace, formatting, or code style;
+
+* changes limited to comments or documentation;
+
+* renaming of variables, functions, files, or the project itself;
+
+* version number changes;
+
+* trivial or cosmetic configuration changes that do not alter functional
+  behavior;
+
+* cosmetic-only user interface changes (e.g., color, layout, wording) that do
+  not alter functionality.
+
+This list is illustrative and non-exhaustive. Where a Modification's status
+is ambiguous, it shall be evaluated according to its substance and practical
+effect, not merely its form or how it is described.
+
+1.7 "Fork" means a version of the Work, or a Derivative Work, that a person or
+entity distributes to others, whether in Source Form or Object Form.
+
+1.8 "Derivative Work" means any work, in Source Form or Object Form, based on
+or derived from the Work, including a Fork.
+
+1.9 "Contribution" means any work intentionally submitted by a person or
+entity ("Contributor") to the Licensor for inclusion in the Work.
+
+1.10 "Commercial Use" means use of the Work, in any form, in connection with
+a business or for-profit activity, including internal business operations,
+whether or not direct payment is made for the Work itself.
+
+1.11 "Internal Use" means use of the Work, including a privately Modified
+version, within an organization, without Commercial Distribution (as defined
+below) of that Modified version to any third party.
+
+1.12 "Commercial Distribution" means any of the following, whether done
+directly or through an intermediary:
+
+* (a) selling, licensing, or otherwise providing access to the Work's Source
+  Form, or to a Modified version of its Source Form, in exchange for payment
+  or other commercial consideration;
+
+* (b) selling or commercially distributing a compiled or packaged product
+  built from a Materially Modified Fork;
+
+* (c) bundling the Work's Source Form, or a Materially Modified version of
+  it, into a paid product, paid service, or paid support offering;
+
+* (d) hosting or operating a Materially Modified version of the Work as a
+  network-accessible or "software-as-a-service" offering for which users or
+  customers pay, or which otherwise generates for-profit commercial benefit
+  for the operator.
+
+A distribution of the Work or a Fork is not Commercial Distribution solely
+because a recipient subsequently puts it to Commercial Use, provided the
+distributor did not know of, intend, authorize, or materially facilitate that
+subsequent Commercial Use. For example:
+
+* publishing a Modified Fork publicly and without cost, with no knowledge of
+  or intent regarding how recipients will use it, is not Commercial
+  Distribution, even if some recipient later uses it commercially;
+
+* distributing a Fork while explicitly marketing, advertising, or structuring
+  that distribution as a means for recipients to obtain the Work for Commercial
+  Use without obtaining a commercial license under Section 7 is Commercial
+  Distribution by the distributor, because it knowingly and materially
+  facilitates circumvention of this License.
+
+1.13 "Official Channels" means distribution channels (such as a specific
+repository, release page, package registry entry, or website) that the
+Licensor designates, from time to time, as official for the Work. The
+Licensor may update or change its Official Channels by providing reasonable
+public notice.
+
+1.14 "Non-Commercial Redistribution" means distribution of a Fork that does
+not constitute Commercial Distribution.
+
+2. Copyright License Grant
+
+Subject to the terms of this License, the Licensor grants each recipient of
+the Work a worldwide, royalty-free, non-exclusive license to:
+
+(a) use the Work;
+(b) reproduce and Modify the Work, including privately;
+(c) publicly perform and display the Work; and
+(d) distribute the Work and Derivative Works, in Source Form or Object Form,
+solely as expressly permitted under Sections 3 through 6 of this License.
+
+No rights are granted except as expressly stated in this License. In
+particular, and without limitation, this License does not grant any right to
+sublicense the Work independently of the redistribution rights expressly
+granted in this License. Recipients may redistribute the Work or their own
+Forks only as, and to the extent, expressly permitted under Sections 5 and 6,
+and may not use a purported "sublicense" to grant third parties rights
+broader than, or in circumvention of, those a recipient itself received under
+this License. This restriction does not prevent a recipient from applying this
+same License to their own redistributed Fork or Modifications as required by
+Section 5.
+
+3. Permitted Uses (General)
+
+3.1 Use. Any person or entity may use the Work for any lawful purpose,
+including Commercial Use, subject to Section 8 (Commercial Use of Official
+Compiled Binaries) and Section 9 (Internal Use of Modified Versions) below.
+
+3.2 Modification. Any person or entity may Modify the Work, including
+privately, for any lawful purpose.
+
+4. Non-Commercial Redistribution
+
+A person or entity may engage in Non-Commercial Redistribution of a Fork, in
+Source Form, without obtaining a commercial license under Section 7, provided
+that all of the following conditions are met:
+
+4.1 The Fork contains at least one Material Modification (as defined in
+Section 1.6);
+
+4.2 The distributor preserves all copyright, license, and attribution notices
+required under Section 10;
+
+4.3 The distributor clearly identifies the Fork as modified from the original
+Work, and identifies, at a reasonably discoverable level of detail, the nature
+of the modifications made;
+
+4.4 The Fork, and its distribution, complies with Section 11 (Project Name and
+Trademark); and
+
+4.5 The distribution does not constitute Commercial Distribution as defined in
+Section 1.12.
+
+Non-Commercial Redistribution under this Section may be made free of charge
+or, where consistent with Section 1.12, in exchange for reasonable costs
+unrelated to commercializing the Work itself (for example, reasonable
+reproduction or media costs), provided this is not used as a mechanism to
+circumvent Section 1.12.
+
+5. Commercial Distribution and Commercial Licensing
+
+5.1 Permission Required. Commercial Distribution of the Work, or of a
+Materially Modified Fork, requires the prior express written permission of the
+Licensor in the form of a separate commercial license agreement ("Commercial
+License"). This requirement applies based on the intent and nature of the
+distribution activity, not solely on whether payment has already occurred at
+the time of distribution.
+
+5.2 Process. A person or entity intending to engage in Commercial Distribution
+must contact the Licensor at morphedstill@gmail.com / blsnmrvn004@gmail.com
+with a description of the intended use, before engaging in that Commercial
+Distribution.
+
+5.3 Discretion. The Licensor may approve or refuse any request for a
+Commercial License at its sole discretion, and is under no obligation to
+provide a reason for its decision, to negotiate, or to grant approval.
+
+5.4 Terms. A Commercial License, if granted, will be a separate written
+agreement between the Licensor and the commercial licensee. It may specify,
+among other things: a licensing fee; permitted versions of the Work; permitted
+methods of distribution; attribution and linking requirements; support
+obligations; duration; termination conditions; and other terms negotiated
+between the parties. Payment of a fee alone does not grant permission to
+engage in Commercial Distribution unless and until a Commercial License has
+been agreed.
+
+5.5 No Effect on Sections 3, 4, 8, and 9. Nothing in this Section 5 restricts
+uses expressly permitted under Sections 3, 4, 8, or 9 of this License.
+
+6. Modification and Attribution Requirements for Redistributed Forks
+
+Any redistribution of a Fork under Section 4 (Non-Commercial Redistribution)
+or under a Commercial License (Section 5), unless the Commercial License
+states otherwise, must include, in the Fork's README file (or equivalent
+primary documentation) and in any other location where users would reasonably
+encounter information about the Fork:
+
+6.1 Preservation of the Work's original copyright notice(s) and the full text
+of this License, in the Source Form of the Fork;
+
+6.2 A clear, visible statement that the Fork is based on, or forked from,
+sceneform;
+
+6.3 A link to the original repository of the Work:
+https://github.com/arvdevable/sceneform; and
+
+6.4 A link to the Licensor: https://github.com/arvdevable/sceneform /
+morphedstill@gmail.com / blsnmrvn004@gmail.com.
+
+A Commercial License granted under Section 5 may specify additional or
+modified attribution and linking requirements applicable to that commercial
+licensee, which will govern in place of this Section 6 to the extent they
+conflict.
+
+7. Commercial License Terms (Reference)
+
+Terms for Commercial Licenses are negotiated on a case-by-case basis between
+the Licensor and the commercial licensee pursuant to Section 5. This License
+does not itself grant Commercial Distribution rights; it establishes the
+process and conditions under which such rights may be separately obtained.
+
+8. Commercial Use of Official Compiled Binaries
+
+Commercial Use of an Official Compiled Binary (as defined in Section 1.4) is
+permitted without obtaining a Commercial License. For example, an individual
+or organization may obtain an Official Compiled Binary of the Work and use it
+internally in a commercial business without that use, by itself, requiring a
+Commercial License.
+
+This Section 8 does not permit Commercial Distribution of the Official
+Compiled Binary itself in a manner that would otherwise constitute Commercial
+Distribution under Section 1.12 — for example, repackaging and reselling the
+Official Compiled Binary as part of a competing commercial product without
+permission remains subject to Section 5.
+
+9. Internal Use of Modified Versions
+
+A person or entity operating a business may Modify the Work and use that
+Modified version internally, including for commercial/business purposes,
+without obtaining a Commercial License, provided that the Modified version is
+not distributed to third parties in a manner that would constitute Commercial
+Distribution under Section 1.12. Internal Use does not include hosting a
+Materially Modified version as a paid or for-profit network-accessible service
+to third parties, which is addressed under Section 1.12(d).
+
+10. Attribution and Notices (General)
+
+In addition to the Fork-specific requirements of Section 6, any distribution of
+the Work, in Source Form or Object Form, must retain all copyright, patent,
+trademark, and attribution notices that were present in the Source Form of
+the Work, except that notices that do not pertain to any part of the Derivative
+Work may be omitted from that Derivative Work.
+
+11. Project Name and Trademark
+
+11.1 No Registered Mark. As of the effective date of this License, sceneform
+and any associated logos are not represented as registered trademarks. This
+Section establishes contractual naming and branding conditions under this
+License; it does not itself create or waive any trademark rights the Licensor
+may hold or later acquire.
+
+11.2 Permitted Use of Original Name/Logo. A Fork may use the name "sceneform"
+or the Licensor's associated logo, including in forms such as "sceneform
+Community Edition," "sceneform Fork," or "sceneform by [Fork Author],"
+automatically under this License, provided that the Fork:
+
+* (a) clearly and prominently identifies itself as unofficial, independent, and
+  not published by the Licensor;
+
+* (b) does not state or imply that it is endorsed, sponsored, authorized, or
+  officially released by the Licensor; and
+
+* (c) complies with the attribution requirements of Section 6.
+
+11.3 Different Name. A Fork may instead adopt an entirely different name
+unrelated to sceneform. Regardless of naming choice, the attribution
+requirements of Section 6 remain mandatory.
+
+11.4 No Implication of Endorsement. No provision of this License shall be
+construed as permission to state or imply Licensor's endorsement, sponsorship,
+affiliation with, or approval of any Fork, product, or service, beyond what
+is expressly stated in a separate written agreement with the Licensor.
+
+12. Contributions
+
+12.1 Grant. By intentionally submitting a Contribution for inclusion in the
+Work, the Contributor grants the Licensor and recipients of the Work the
+rights necessary to use, reproduce, modify, incorporate, and redistribute that
+Contribution under this License.
+
+12.2 Ownership Retained. The Contributor retains copyright ownership of their
+Contribution. Nothing in this License shall be construed as an assignment or
+transfer of that ownership, nor as granting any Contributor a percentage or
+ownership interest in the Work as a whole.
+
+12.3 License of Accepted Contributions. Contributions accepted into the Work
+are licensed to the public under this same License, unless the Contributor
+and the Licensor have a separate written agreement stating otherwise.
+
+12.4 Attribution. The Licensor will provide reasonable attribution/credit to
+Contributors, consistent with the Project's customary practices (e.g.,
+contributor lists, commit history, or release notes).
+
+13. Termination
+
+13.1 Cure Period. Except as provided in Section 13.2, if a person or entity
+breaches this License, the Licensor will provide notice of the breach, and
+that person or entity will have forty (40) days from such notice to cure the
+breach. If not cured within that period, the License granted to that person
+or entity under this License terminates automatically at the end of the cure
+period.
+
+13.2 Immediate Termination. The License granted to a person or entity
+terminates immediately, without a cure period, upon:
+
+* (a) engaging in Commercial Distribution without the required Commercial
+  License or Licensor approval under Section 5; or
+
+* (b) violating Section 11 by falsely representing a Fork as official,
+  authorized, sponsored, or endorsed by the Licensor.
+
+The Licensor may, at its discretion, also treat other serious violations of
+this License as immediate-termination events where warranted by the nature of
+the violation.
+
+13.3 Effect of Termination. Upon termination of a person's or entity's rights
+under this License:
+
+* (a) that person or entity must cease all further use, reproduction, and
+  distribution of the Work and any Fork under their control, and must take
+  down or remove copies they directly control or host (including, for
+  example, self-hosted deployments or repositories under their control);
+
+* (b) copies of the Work or a Fork already distributed to, and outside the
+  control of, the terminated party (e.g., already in the hands of third-party
+  recipients) are not required to be recalled or removed, and this License
+  does not purport to terminate rights previously and validly granted to those
+  independent third-party recipients with respect to copies already in their
+  possession;
+
+* (c) termination applies only to the person or entity that committed the
+  violation, and does not, by itself, terminate the rights of other, unrelated
+  recipients of the Work or of independently distributed Forks who are not
+  themselves in breach.
+
+13.4 Survival. Sections 1 (Definitions), 12.2 (Ownership Retained), 15
+(Copyright and Ownership), 16 (Patent Rights — solely with respect to the
+automatic termination provision in 16.2), 17 (Warranty Disclaimer), 18
+(Limitation of Liability), 20 (Governing Law and Jurisdiction), and this
+Section 13.4 survive termination of this License.
+
+14. Copyright and Ownership
+
+The Work is protected by copyright and other intellectual property laws. The
+Licensor retains all right, title, and interest in and to the Work, except
+for the rights expressly granted under this License and except for
+Contributors' retained ownership of their own Contributions as set out in
+Section 12.2.
+
+15. Patent Rights
+
+15.1 Grant. Subject to the terms of this License, the Licensor grants each
+recipient of the Work a worldwide, royalty-free, non-exclusive patent license
+to make, have made, use, offer to sell, sell, import, and otherwise transfer
+the Work, solely to the extent such patent claims are held by the Licensor and
+are necessarily infringed by the unmodified Work as provided by the Licensor.
+
+15.2 Defensive Termination. If any recipient institutes patent litigation
+against the Licensor or any other party alleging that the Work, or a product
+incorporating the Work, constitutes direct or contributory patent
+infringement, then the patent license granted to that recipient under this
+Section 15 terminates automatically as of the date such litigation is filed.
+This Section 15.2 applies only to litigation concerning the Work or products
+incorporating the Work, and does not apply to unrelated patent disputes
+between the recipient and the Licensor.
+
+15.3 No Broader Grant. No patent license is granted with respect to
+modifications made by any party other than the Licensor, or to combinations
+of the Work with other software or hardware not provided by the Licensor.
+
+16. Warranty Disclaimer
+
+THE WORK IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. THE LICENSOR MAKES NO
+WARRANTY THAT THE WORK WILL BE ERROR-FREE, UNINTERRUPTED, OR FIT FOR ANY
+PARTICULAR PURPOSE. YOU ASSUME ALL RISK ASSOCIATED WITH YOUR USE OF THE WORK.
+
+17. Limitation of Liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE
+LICENSOR BE LIABLE TO ANY PERSON OR ENTITY FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES ARISING OUT OF OR IN
+CONNECTION WITH THIS LICENSE OR THE USE OR INABILITY TO USE THE WORK, WHETHER
+BASED ON CONTRACT, TORT, STRICT LIABILITY, OR ANY OTHER LEGAL THEORY, AND EVEN
+IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+Where applicable law does not allow the exclusion of certain warranties or the
+limitation of certain damages, the above exclusions and limitations apply only
+to the maximum extent permitted by that law.
+
+18. Governing Law and Jurisdiction
+
+This License is governed by, and shall be construed in accordance with, the
+laws of Indonesia, without regard to its conflict-of-laws principles. Any
+dispute arising out of or relating to this License shall be subject to the
+exclusive jurisdiction of the courts located in Indonesia, except where
+mandatory consumer-protection or other laws of a licensee's jurisdiction of
+residence require otherwise, in which case such mandatory local law shall apply
+solely to the extent required.
+
+19. General Provisions
+
+19.1 Entire Agreement. This License, together with any Commercial License
+entered into under Section 5, constitutes the entire agreement between the
+parties with respect to the Work, and supersedes all prior or contemporaneous
+understandings regarding its subject matter.
+
+19.2 No Waiver. Failure by the Licensor to enforce any provision of this
+License shall not be construed as a waiver of that provision or of any other
+provision.
+
+19.3 Severability. If any provision of this License is held unenforceable, the
+remaining provisions will remain in full force and effect, and the
+unenforceable provision will be modified to the minimum extent necessary to
+make it enforceable while preserving its intent.
+
+19.4 Assignment. The Licensor may assign or transfer its rights under this
+License. A licensee may not assign or transfer its rights under this License
+without the Licensor's prior written consent, except as part of a permitted
+redistribution under Sections 4 or 5.
+
+19.5 No Partnership. Nothing in this License creates a partnership, joint
+venture, agency, or employment relationship between the Licensor and any
+recipient.
+
+19.6 Amendments. The Licensor may publish revised versions of this License.
+Unless otherwise stated, a version of the Work made available under a
+specific version of this License remains governed by that version, and the
+Licensor will indicate if a new version applies to future releases.
+
+20. Contact Information
+
+For questions regarding this License, or to request a Commercial License under
+Section 5, contact:
+
+morphedstill / Blasius N. Marvin
+Email: morphedstill@gmail.com / blsnmrvn004@gmail.com
+Discord: @axelleondrugs
+Project: https://github.com/arvdevable/sceneform
+Repository: https://github.com/arvdevable/sceneform
+
+*This document is a custom legal instrument prepared for sceneform. It is
+not the Apache License 2.0 and is not OSI-approved. If you rely on this License
+commercially or need to enforce it, consult a qualified lawyer in your
+jurisdiction.*

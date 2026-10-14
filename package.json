@@ -1,0 +1,60 @@
+{
+  "name": "sceneform",
+  "version": "0.80.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/desktop.mjs dev",
+    "build": "node scripts/desktop.mjs build && vite build",
+    "start": "node scripts/start.mjs",
+    "package": "npm run build && electron-forge package",
+    "make": "npm run build && electron-forge make",
+    "typecheck": "tsc --noEmit -p tsconfig.desktop.json",
+    "backend:prepare": "node scripts/prepare-parser.cjs",
+    "backend:typecheck": "tsc --noEmit -p tsconfig.backend.json",
+    "backend:build": "tsc -p tsconfig.backend.json && npm run backend:prepare",
+    "backend:check": "npm run backend:build"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.20.3",
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/language": "^6.13.1",
+    "@codemirror/search": "^6.7.2",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.14",
+    "jszip": "^3.10.2",
+    "pdf-lib": "^1.17.1",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
+    "@electron-forge/maker-deb": "^8.0.1",
+    "@electron-forge/maker-dmg": "^8.0.1",
+    "@electron-forge/maker-rpm": "^8.0.1",
+    "@electron-forge/maker-squirrel": "^8.0.1",
+    "@electron-forge/maker-zip": "^8.0.1",
+    "@types/jszip": "^3.4.0",
+    "@types/node": "^26.6.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^44.4.3",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  },
+  "main": "dist-electron/main.js",
+  "productName": "Sceneform",
+  "author": "Sceneform",
+  "description": "Sceneform: a free Fountain screenplay IDE",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sceneform/sceneform.git"
+  },
+  "homepage": "https://github.com/sceneform/sceneform#readme",
+  "bugs": {
+    "url": "https://github.com/sceneform/sceneform/issues"
+  }
+}

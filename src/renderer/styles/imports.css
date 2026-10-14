@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "Courier Prime";
+	src: url("./fonts/Courier_Prime/CourierPrime-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url("./fonts/Courier_Prime/CourierPrime-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url("./fonts/Courier_Prime/CourierPrime-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Courier Prime";
+	src: url("./fonts/Courier_Prime/CourierPrime-BoldItalic.ttf") format("truetype");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Scoutie Sans";
+	src: url("./fonts/Scoutie_Sans/static/ScoutieSans-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Scoutie Sans";
+	src: url("./fonts/Scoutie_Sans/static/ScoutieSans-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Scoutie Sans";
+	src: url("./fonts/Scoutie_Sans/static/ScoutieSans-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Scoutie Sans";
+	src: url("./fonts/Scoutie_Sans/static/ScoutieSans-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Scoutie Sans";
+	src: url("./fonts/Scoutie_Sans/static/ScoutieSans-ExtraBold.ttf") format("truetype");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Scoutie Sans";
+	src: url("./fonts/Scoutie_Sans/static/ScoutieSans-Italic.ttf") format("truetype");
+	font-weight: 400;
+	font-style: italic;
+}

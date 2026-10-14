@@ -1,0 +1,111 @@
+name: Build installers
+
+# Builds Windows (.exe, Squirrel), macOS (.dmg + .zip, arm64 and x64) and Linux (.deb + .rpm)
+# with Electron Forge. Runs on demand, on version tags, and on PRs that touch packaging; a v* tag also drafts a GitHub release.
+# Builds are unsigned for now (no Authenticode signing or Apple notarization).
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ["v*"]
+  # Only PRs that touch packaging, so ordinary PRs don't burn (10x-priced) macOS minutes.
+  pull_request:
+    paths:
+      - ".github/workflows/build-installers.yml"
+      - "forge.config.cjs"
+      - "package.json"
+      - "package-lock.json"
+      - "scripts/rpm.spec.ejs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: installers-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  make:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Windows x64 (.exe)
+            os: windows-latest
+            arch: x64
+            artifact: sceneform-windows-x64
+          - name: macOS arm64 (.dmg)
+            os: macos-14
+            arch: arm64
+            artifact: sceneform-macos-arm64
+          - name: macOS x64 (.dmg)
+            # Cross-built on Apple silicon: Intel macOS runners are being retired, and the app has no native modules.
+            os: macos-14
+            arch: x64
+            artifact: sceneform-macos-x64
+          - name: Linux x64 (.deb, .rpm)
+            os: ubuntu-latest
+            arch: x64
+            artifact: sceneform-linux-x64
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install Linux packaging tools
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends rpm fakeroot dpkg
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: |
+          npx tsc -p tsconfig.desktop.json
+          npx tsc --noEmit -p tsconfig.backend.json
+
+      - name: Build and make installers
+        run: npm run make -- --arch=${{ matrix.arch }}
+
+      - name: Upload installers
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact }}
+          if-no-files-found: error
+          path: |
+            out/make/**/*.exe
+            out/make/**/*.nupkg
+            out/make/**/RELEASES
+            out/make/**/*.dmg
+            out/make/**/*.zip
+            out/make/**/*.deb
+            out/make/**/*.rpm
+
+  release:
+    name: Draft release
+    needs: make
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+      - name: Create draft release
+        uses: softprops/action-gh-release@v2
+        with:
+          draft: true
+          prerelease: ${{ contains(github.ref_name, '-') || startsWith(github.ref_name, 'v0.') }}
+          generate_release_notes: true
+          files: |
+            dist/**/*.exe
+            dist/**/*.dmg
+            dist/**/*.zip
+            dist/**/*.deb
+            dist/**/*.rpm
