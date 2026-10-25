@@ -52,6 +52,7 @@ Bug reports, word-list additions and pull requests are welcome. Read [CONTRIBUTI
 
 - Scene notes from cards in Inspector
 - Fix installer
+- Project-specific dictionary, disable dictionary
 
 ## License
 
