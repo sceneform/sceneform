@@ -48,6 +48,11 @@ How the code is laid out: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 Bug reports, word-list additions and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) first.
 
+## TBA
+
+- Scene notes from cards in Inspector
+- Fix installer
+
 ## License
 
 Sceneform is **source-available**, not open source. It uses the [sceneform Source-Available License](LICENSE): you may use, study and modify it, and redistribute it non-commercially under its terms. Commercial redistribution needs a separate license. Read [LICENSE](LICENSE) for the details.
